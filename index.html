@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Unicon -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="result-container">
+        <input
+          type="text"
+          class="result-input result-input-kecil"
+          disabled
+          value="0"
+        />
+        <input
+          type="text"
+          class="result-input result-input-besar"
+          disabled
+          value="0"
+        />
+      </div>
+      <div class="body-calculator">
+        <div class="item-calculator-container">
+          <div class="delete-result-container">
+            <div class="item remove-all-item">AC</div>
+            <div class="item remove-one-item">DEL</div>
+            <div class="item item-red item-red-2" data-value="/100">%</div>
+            <div class="item item-red operator-item" data-value="/">&#247;</div>
+          </div>
+          <div class="number-calculator-container">
+            <div class="item number-item" data-value="7">7</div>
+            <div class="item number-item" data-value="8">8</div>
+            <div class="item number-item" data-value="9">9</div>
+            <div class="item item-red operator-item" data-value="*">&#215;</div>
+            <div class="item number-item" data-value="4">4</div>
+            <div class="item number-item" data-value="5">5</div>
+            <div class="item number-item" data-value="6">6</div>
+            <div class="item item-red operator-item" data-value="-">-</div>
+            <div class="item number-item" data-value="1">1</div>
+            <div class="item number-item" data-value="2">2</div>
+            <div class="item number-item" data-value="3">3</div>
+            <div class="item item-red operator-item" data-value="+">+</div>
+            <div class="item number-item" data-value="0">0</div>
+            <div class="item number-item" data-value="00">00</div>
+            <div class="item number-item" data-value="000">000</div>
+            <div class="item item-red-1 result-item" data-value="">=</div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-container">
+        <i class="uil uil-moon btn-theme" id="theme-button"></i>
+      </div>
+      <div class="btn-copy" title="Copy Result">
+        <i class="uil uil-clipboard-alt"></i>
+      </div>
+      <div class="btn-riwayat" title="History">
+        <i class="uil uil-history"></i>
+      </div>
+    </div>
+    <footer>
+      © Copyright 2021
+      <a href="https://www.instagram.com/nelsensepta/" target="_blank"
+        >Nelsensepta 😉</a
+      >
+    </footer>
+    <div class="riwayat-container">
+      <div class="riwayat-box">
+        <div class="header-riwayat">
+          <div class="header-riwayat-txt">History</div>
+          <div class="close-riwayat">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
+        <div class="body-riwayat">Belum Ada Riwayat</div>
+        <div class="footer-riwayat">
+          <div class="btn-trash">
+            <i class="uil uil-trash-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
